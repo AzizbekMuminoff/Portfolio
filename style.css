@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #444;
+}
+
+.video-container, .photo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video-container iframe, .photo-container img {
+    margin: 10px;
+    width: calc(50% - 20px);
+    height: 250px; /* Adjust based on aspect ratio */
+}
+
+.photo-container img {
+    height: auto; /* Adjust for images */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
