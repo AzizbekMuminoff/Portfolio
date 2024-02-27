@@ -4,78 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aziz Muminov's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-        body {
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-        .media-item {
-            margin: 1rem 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .media-item:hover {
-            transform: translateY(-5px);
-        }
+	* {
+        font-family: 'Montserrat', sans-serif;
+    	}
         .caption {
-            color: #333;
-            font-size: 1rem;
+            color: #666;
+            font-size: 1.0em;
             margin-top: 0.5rem;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-        }
-        h2 {
-            color: #007bff;
-        }
-        .portfolio-section {
-            margin-bottom: 3rem;
+        .media-item {
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body>
     <header class="text-center py-4">
-        <h1>Aziz Muminov's Portfolio</h1>
+        <h3>Aziz Muminov's Portfolio</h3>
     </header>
     <main class="container mt-5">
-        <!-- Unity and Unreal Engine Section -->
-        <section id="unreal" class="portfolio-section">
-            <h2 class="mb-4 text-center">Unity and Unreal Engine Projects</h2>
-            <div class="row justify-content-center">
-                <!-- Simplified for example; repeat structure for each project -->
-                <div class="col-md-6 col-lg-4 media-item">
-                    <iframe src="https://player.vimeo.com/video/914075035?h=4cdfba02e9&title=0&byline=0" style="width: 100%; height: 200px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    <p class="caption">AR Car Visualization App - A demonstration of real-time car model visualization in augmented reality, showcasing dynamic lighting and reflections.</p>
-                </div>
+        <section id="unreal">
+
+            <h2 class="mb-4 text-center">Unity and Unreal Engine</h2>
+
+            <div class="row text-center">
+	<div class="col-12 media-item">
+		<iframe src="https://player.vimeo.com/video/914075035?h=4cdfba02e9&title=0&byline=0" width="360" height="640" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p class="caption">AR Car Visualization App</p>
+        </div>
+
+<div class="col-12 media-item">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/914076354?h=44409c0a17&title=0&byline=0" width="360" height="640" frameborder="0" allowfullscreen></iframe>
+            <p class="caption">WebAR</p>
+        </div>
+
+	<div class="col-12 media-item">
+            <iframe src="https://player.vimeo.com/video/886941914?h=9c37547248&byline=0&title=0" width="360" height="800" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p class="caption">Menu ARFood</p>
+        </div>
+
+
+
+	<div class="col-12 media-item">
+            	<iframe title="vimeo-player" src="https://player.vimeo.com/video/914076779?h=bfac222cc5&title=0&byline=0" width="360" height="640" frameborder="0" allowfullscreen></iframe>
+           <p class="caption">WebAR</p>
+        </div>
+
             </div>
         </section>
-
-        <!-- Blender 3D Portfolio Section -->
-        <section id="blender" class="portfolio-section">
+        <section id="blender" class="mt-5">
             <h2 class="mb-4">Blender 3D Portfolio</h2>
             <div class="row">
-                <!-- Simplified for example; repeat structure for each image -->
-                <div class="col-sm-6 col-md-4 media-item">
-                    <img src="1.png" alt="Blender Project Image 1" class="img-fluid">
-                    <p class="caption">Fantasy Landscape - A detailed rendering of a fantasy landscape showcasing advanced texturing and lighting techniques.</p>
+
+                <div class="col-6 media-item">
+                    <img src="1.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="2.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="6.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="7.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="3.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="5.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="4.png" alt="Blender Image 1" class="w-100">
+
+                </div>
+                <div class="col-6 media-item">
+                    <img src="8.png" alt="Blender Image 1" class="w-100">
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center py-3">
-        <p>© 2024 Azizbek Muminov. All rights reserved.</p>
+    <footer class="text-center bg-dark text-white py-3 mt-5">
+        <p>© 2024 Azizbek Muminov's Portfolio</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
