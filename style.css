@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -17,24 +18,30 @@ main {
 
 h2 {
     color: #444;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .video-container, .photo-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center; /* Center-align items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+    margin-top: 20px;
 }
 
 .video-container iframe, .photo-container img {
     margin: 10px;
-    width: calc(50% - 20px);
-    height: 350px; /* Adjust based on aspect ratio */
-    align-content: center;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 450px; /* Restrict to a reasonable size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure items align properly */
 }
 
 .photo-container img {
-    height: auto; /* Adjust for images */
-    max-width: 900px;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
 }
 
 footer {
@@ -42,7 +49,21 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    position: relative; 
+}
+
+@media (max-width: 768px) {
+    .video-container iframe, .photo-container img {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
